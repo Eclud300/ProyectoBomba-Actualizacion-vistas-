@@ -66,10 +66,10 @@
                     <!-- Botón Iniciar Sesión -->
                     <Button Text="Iniciar Sesión"
                             CornerRadius="17"
-                            BackgroundColor="#5af5ff"
+                            BackgroundColor="#00cdff"
                             TextColor="White"
                             FontAttributes="Bold"
-                            FontSize="14"
+                            FontSize="17"
                             Command="{Binding LoginCommand}"/>
 
                     <!-- Línea de separación -->
@@ -79,10 +79,11 @@
 
                     <!-- Botón Crear Cuenta -->
                     <Button Text="Crear cuenta"
-                            BackgroundColor="#5af5ff"
+                            BackgroundColor="#00cdff"
                             TextColor="White"
                             FontAttributes="Bold"
-                            FontSize="19"
+                            CornerRadius="17"
+                            FontSize="17"
                             Command="{Binding CrearCuentaCommand}"/>
                 </VerticalStackLayout>
             </Frame>

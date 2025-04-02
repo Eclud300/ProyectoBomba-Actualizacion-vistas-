@@ -60,7 +60,6 @@
 	  <None Remove="Resources\Images\a.png" />
 	  <None Remove="Resources\Images\casa.png" />
 	  <None Remove="Resources\Images\e.png" />
-	  <None Remove="Resources\Images\grafica.png" />
 	  <None Remove="Resources\Images\historial.png" />
 	  <None Remove="Resources\Images\historial_dos.png" />
 	  <None Remove="Resources\Images\inicio.png" />
