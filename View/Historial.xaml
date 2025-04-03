@@ -2,15 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoBomba.View.Historial"
              xmlns:viewModel="clr-namespace:ProyectoBomba.ViewModel"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#97d6ea">
 
     <!-- Asignar el ViewModel -->
     <ContentPage.BindingContext>
-        <viewModel:HistorialViewModel />
+        <viewModel:HistorialViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <VerticalStackLayout BackgroundColor="White">
+        <VerticalStackLayout>
             <!-- Título -->
             <Label Text="Historial"
                    FontSize="30"
@@ -29,21 +30,30 @@
                 SeparatorVisibility= "Default">
 
                 <ListView.Header>
-                    <Grid Padding="10,5" ColumnSpacing="10">
+                    <Grid Padding="10,5" ColumnSpacing="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Label Text="Día" 
-                               FontAttributes="Bold" 
+                        <Label Text="Día"
+                               FontSize="18"
+                               TextColor="White"
+                               BackgroundColor="#26496b"
+                               FontAttributes="Bold"
                                Grid.Column="0"
                                HorizontalTextAlignment="Center"/>
-                        <Label Text="Litros" 
+                        <Label Text="Porcentaje"
+                               FontSize="18"
+                               TextColor="White"
+                               BackgroundColor="#26496b"
                                FontAttributes="Bold" 
                                Grid.Column="1"
                                HorizontalTextAlignment="Center"/>
                         <Label Text="Tiempo" 
+                               FontSize="18"
+                               TextColor="White"
+                               BackgroundColor="#26496b"
                                FontAttributes="Bold" 
                                Grid.Column="2"
                                HorizontalTextAlignment="Center"/>
@@ -59,12 +69,12 @@
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
+                                </Grid.ColumnDefinitions> 
                                 <Label Text="{Binding Dia}" 
                                        Grid.Column="0" 
                                        HorizontalTextAlignment="Center"
                                        VerticalTextAlignment="Center"/>
-                                <Label Text="{Binding Litros}" 
+                                <Label Text="{Binding Porcentaje}" 
                                        Grid.Column="1" 
                                        HorizontalTextAlignment="Center"
                                        VerticalTextAlignment="Center"/>

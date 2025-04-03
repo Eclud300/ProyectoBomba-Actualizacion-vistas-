@@ -8,5 +8,6 @@ public partial class Alarma : ContentPage
 		InitializeComponent();
 
         BindingContext = new AlarmaViewModel();
+
     }
 }
